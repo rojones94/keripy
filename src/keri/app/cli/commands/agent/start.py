@@ -21,7 +21,7 @@ WEB_DIR_PATH = os.path.dirname(
 STATIC_DIR_PATH = os.path.join(WEB_DIR_PATH, 'static')
 
 d = "Runs KERI Agent controller.\n"
-d += "Example:\nagent -t 5621\n"
+d += "Example:\nagent start -t 5621\n"
 parser = argparse.ArgumentParser(description=d)
 parser.set_defaults(handler=lambda args: launch(args))
 parser.add_argument('-T', '--tcp',

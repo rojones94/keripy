@@ -18,9 +18,13 @@ depending on your shell.
 You also need to have `jq` installed on your machine as the scripts use it to pretty print the JSON results of many of the 
 commands.
 
+``` bash
+$ apt install jq
+```
+
 ### Python Requirements
 We recommend using a virtual environment manager like `venv` or `pyenv` to set up a virtual environment with the version
-of python listed in `setup.py` and `pip` for that version of Python.   Once that is done, install the required dependencies with:
+of python listed in `setup.py` and `pip` for that version of Python.   Once that is done, install the required dependencies from the root of the project with:
 
 `pip install -r requirements.txt`
 
@@ -28,12 +32,12 @@ of python listed in `setup.py` and `pip` for that version of Python.   Once that
 ## Directory Layout
 The directories each exercise different parts of the KERI core library:
 
-* basic - Exercises the KERI key management functionality from basic identifier inception to distributed multisig and delegations
+* [basic](basic/README.md) - Exercises the KERI key management functionality from basic identifier inception to distributed multisig and delegations
 * credentials - Exercises the KERI / ACDC credential issuance capabilities from single and multi-sig identifiers
-* vLEI - Launches configures agents in accordance with the requirements of the GLEIF vLEI ecosystem and credentials
+* [vLEI](vLEI/README.md) - Launches configures agents in accordance with the requirements of the GLEIF vLEI ecosystem and credentials
+* data - This directory doesn't contain scripts but it dose contain data used by the scripts
 
-Each directory contains a README.md file that details additional steps or modifications to the steps listed below for running
-the scripts in that directory.
+
 
 ## Command Line vs ReST Scripts
 In many cases, the scripts were created in pairs with one script exercising a set of functions from the `kli` command line
@@ -74,7 +78,7 @@ The library will create the directories in one of 3 locations on the local file 
 * `/usr/local/var/keri`
 * `$HOME/.keri`
 
-If the core library is initialize with a setting of `temp=False` (for example in unit tests) all database directories are created in `/tmp`.  
+If the core library is initialize with a setting of `temp=True` (for example in unit tests) all database directories are created in `/tmp`.  
 This location is not used with the demo scripts.  If the directory `/usr/local/var/keri` exists and the current user has write access to that directory
 the the core library will place all database directories there.  If either that directory does not exist or is not writable, then the core library
 will create the database directories under `.keri` in the current users home directory.

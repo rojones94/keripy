@@ -61,8 +61,8 @@ setup(
         'Topic :: Utilities',
     ],
     project_urls={
-        'Documentation': 'https://keri.readthedocs.io/',
-        'Changelog': 'https://keri.readthedocs.io/en/latest/changelog.html',
+        'Documentation': 'https://keripy.readthedocs.io/',
+        'Changelog': 'https://keripy.readthedocs.io/en/latest/changelog.html',
         'Issue Tracker': 'https://github.com/WebOfTrust/keripy/issues',
     },
     keywords=[

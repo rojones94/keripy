@@ -8,6 +8,8 @@ Project Name:  keripy
 [![https://pypi.org/project/keri/](https://img.shields.io/pypi/pyversions/keri.svg)](https://pypi.org/project/keri/)
 [![Documentation Status](https://readthedocs.org/projects/keripy/badge/?version=latest)](https://keripy.readthedocs.io/en/latest/?badge=latest)
 
+----------------------------------------------
+
 ## Installation
 
 ### Local installation - build from source
@@ -27,6 +29,14 @@ to get a version string similar to the following:
 Run `make build-keri` to build your docker image.
 
 Then run `docker run -it gleif/keri /bin/bash` and you can run `kli version` from within the running container to play with KERIpy.
+
+### PYPI
+
+```bash
+$ pip3 install keripy
+```
+Direct mode [demo](src\keri\demo\demo.md)
+
 
 ### Dependencies
 #### Binaries
@@ -59,6 +69,23 @@ $ pip3 install -U simplejson
 $ pip3 install -U cbor2
 ```
 
+----------------------------------------------
+
+## Getting Started
+[Getting started](ref\getting_started.md)
+
+[Transaction event log description](ref\tel.md)
+
+
+### Demos
+
+[Demos](scripts\demo\README.md) are available to show different use-cases of KERI
+
+### Hints
+
+Agents have an open api spec which can be found at `/swaggerui/index.html`
+
+----------------------------------------------
 
 ## Development
 
@@ -85,3 +112,4 @@ pytest tests/demo/
 * Build with Sphinx in `/docs`: 
   * `$ make html`
 
+----------------------------------------------
