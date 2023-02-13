@@ -101,3 +101,18 @@ $ delegate-agent.sh
 ```
 
 ----------
+
+## Multi signature
+
+
+In the first run:
+```bash
+$ kli witness demo
+```
+
+In the second (where the interactions happen) run:
+```bash
+$ multisig.sh
+```
+
+----------
