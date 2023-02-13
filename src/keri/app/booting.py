@@ -19,7 +19,7 @@ from keri.app import specing, configing, habbing, kiwiing, httping, keeping
 from keri.core import coring
 from keri.vdr import credentialing
 
-from definitions import STATIC_DIR
+from keri import STATIC_DIR
 
 DEFAULT_PASSCODE_SIZE = 21
 PASSCODE_CHARS = string.ascii_lowercase + string.ascii_uppercase + '123456789'

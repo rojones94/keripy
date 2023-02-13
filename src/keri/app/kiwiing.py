@@ -15,6 +15,7 @@ from hio.core import http
 from hio.help import decking
 
 import keri.app.oobiing
+from keri import STATIC_DIR
 from . import grouping, challenging, connecting, notifying, signaling, oobiing
 from .. import help
 from .. import kering

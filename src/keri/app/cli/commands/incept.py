@@ -159,6 +159,7 @@ class InceptDoer(doing.DoDoer):
         _ = (yield self.tock)
 
         hab = self.hby.makeHab(name=self.alias, **self.inits)
+
         self.witDoer = agenting.WitnessReceiptor(hby=self.hby)
         self.extend([self.witDoer])
 
@@ -175,6 +176,7 @@ class InceptDoer(doing.DoDoer):
                 _ = yield self.tock
 
         if hab.kever.delegator:
+            print("Waiting for delegator event...")
             yield from self.postman.sendEvent(hab=hab, fn=hab.kever.sn)
 
         print(f'Prefix  {hab.pre}')

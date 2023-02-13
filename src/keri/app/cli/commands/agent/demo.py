@@ -1,7 +1,7 @@
 import argparse
 import os
 
-from definitions import PROJECT_ROOT_DIR
+from keri import PROJECT_ROOT_DIR
 
 from keri.app import booting
 from keri.app.cli.commands.agent import start

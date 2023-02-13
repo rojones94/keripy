@@ -37,7 +37,40 @@ In the first terminal run:
 $ kli witness demo
 ```
 
-In the second terminal (where the network interactions happen) run:
+In the second terminal (where the interactions happen) run:
 ```bash
 $ challenge.sh
+```
+
+## Delegate
+
+This demo creates two Identities where the one Identity delegates to the second
+
+In the first terminal run:
+```bash
+$ kli witness demo
+```
+
+In the second terminal (where the interactions happen) run:
+```bash
+$ challenge.sh
+```
+
+## Delegate Agent
+
+This demo uses agents to demonstrate delegation from one AID to another
+
+In the first run:
+```bash
+$ kli agent demo --config-file demo-witness-oobis
+```
+
+In the second run:
+```bash
+$ kli witness demo
+```
+
+In the third (where the network interactions happen) run:
+```bash
+$ delegate-agent.sh
 ```
