@@ -35,7 +35,7 @@ class RotateOptions:
     isith: int | str | list
     ncount: int
     nsith: int | str | list = '0'
-    toad: int = 0
+    toad: int = None
     wits: list = None
     witsCut: list = None
     witsAdd: list = None

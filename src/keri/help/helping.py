@@ -71,8 +71,11 @@ def datify(cls, d):
         if callable(der):
             return der(d)
 
-        fieldtypes = {f.name: f.type for f in dataclasses.fields(cls)}
-        return cls(**{f: datify(fieldtypes[f], d[f]) for f in d})  # recursive
+        if dataclasses.is_dataclass(cls):
+            fieldtypes = {f.name: f.type for f in dataclasses.fields(cls)}
+            return cls(**{f: datify(fieldtypes[f], d[f]) for f in d})  # recursive
+        else:
+            return d
     except:
         return d  # Not a dataclass.
 
