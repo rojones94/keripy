@@ -13,17 +13,31 @@ $ demo-script.sh
 ## Agent interactions over a network
 You will need multiple terminals for this demo.
 
-In the first run 
+In the first run:
 ```bash
 $ kli agent demo --config-file demo-witness-oobis
 ```
 
-In the second run 
+In the second run:
 ```bash
 $ kli witness demo
 ```
 
-In the third (where the network interactions happen) run 
+In the third (where the network interactions happen) run:
 ```bash
 $ alice-bob-agent.sh
+```
+
+## Challenge
+
+This demo uses the KERI cli `kli` to create and incept two parties. Then the two parties resolve each other using oobi aliases. Finally each party is asked to respond to a word based challenge.
+
+In the first terminal run:
+```bash
+$ kli witness demo
+```
+
+In the second terminal (where the network interactions happen) run:
+```bash
+$ challenge.sh
 ```

@@ -22,6 +22,9 @@ commands.
 $ apt install jq
 ```
 
+The `kli` commands are intended to be run from the repository root unless otherwise stated.
+
+
 ### Python Requirements
 We recommend using a virtual environment manager like `venv` or `pyenv` to set up a virtual environment with the version
 of python listed in `setup.py` and `pip` for that version of Python.   Once that is done, install the required dependencies from the root of the project with:

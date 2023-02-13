@@ -3788,7 +3788,7 @@ def loadEnds(app, *,
     sink = http.serving.StaticSink(staticDirPath=path)
     app.add_sink(sink, prefix=sink.DefaultStaticSinkBasePath)
 
-    swagsink = http.serving.StaticSink(staticDirPath="./static")
+    swagsink = http.serving.StaticSink(staticDirPath=STATIC_DIR)
     app.add_sink(swagsink, prefix="/swaggerui")
 
     lockEnd = LockEnd(servery=servery, bootConfig=bootConfig)

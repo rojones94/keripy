@@ -19,6 +19,8 @@ from keri.app import specing, configing, habbing, kiwiing, httping, keeping
 from keri.core import coring
 from keri.vdr import credentialing
 
+from definitions import STATIC_DIR
+
 DEFAULT_PASSCODE_SIZE = 21
 PASSCODE_CHARS = string.ascii_lowercase + string.ascii_uppercase + '123456789'
 
@@ -422,7 +424,7 @@ def loadEnds(app, servery, *, configFile=None, configDir=None, base="", temp=Fal
     sink = http.serving.StaticSink(staticDirPath=path)
     app.add_sink(sink, prefix=sink.DefaultStaticSinkBasePath)
 
-    swagsink = http.serving.StaticSink(staticDirPath="./static")
+    swagsink = http.serving.StaticSink(staticDirPath=STATIC_DIR)
     app.add_sink(swagsink, prefix="/swaggerui")
 
     passcodeEnd = PasscodeEnd()
