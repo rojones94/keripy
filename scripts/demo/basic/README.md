@@ -131,3 +131,18 @@ $ multisig-triple.sh
 ```
 
 ----------
+
+## Multi signature with rotation
+
+
+In the first run:
+```bash
+$ kli witness demo
+```
+
+In the second (where the interactions happen) run:
+```bash
+$ multisig-partial-rotation.sh
+```
+
+----------

@@ -66,5 +66,4 @@ echo
 echo "Watching multisig AID for multisig3 (out of date member)"
 kli local watch --name multisig3
 
-
-
+echo "Demo Compleate"
