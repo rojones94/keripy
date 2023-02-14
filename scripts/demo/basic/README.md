@@ -81,7 +81,7 @@ $ challenge.sh
 
 ----------
 
-## Delegate Agent
+## Delegate agent
 
 This demo uses agents to demonstrate delegation from one AID to another
 
@@ -174,6 +174,27 @@ $ kli witness demo
 In the second (where the interactions happen) run:
 ```bash
 $ multisig-delegate-delegator.sh
+```
+
+----------
+
+## Multi signature agent
+
+This demo uses agents to demonstrate multiple signatures from agents on a network.
+
+In the first run:
+```bash
+$ kli agent demo --config-file demo-witness-oobis
+```
+
+In the second run:
+```bash
+$ kli witness demo
+```
+
+In the third (where the network interactions happen) run:
+```bash
+$ multisig-agent.sh
 ```
 
 ----------

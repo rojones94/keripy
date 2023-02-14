@@ -35,4 +35,4 @@ sleep 3
 curl -s -X PUT "http://localhost:5723/groups/issuer/ixn" -H "accept: */*" -H "Content-Type: application/json" -d "{\"aids\":[\"EJccSRTfXYF6wrUVuenAIHzwcx3hJugeiJsEKmndi5q1\",\"EKYLUMmNPZeEs77Zvclf0bSN5IN-mLfLpx2ySb-HDlk4\"], \"data\":[{\"i\":\"EAXJtG-Ek349v43ztpFdRXozyP7YnALdB0DdCEanlHmg\",\"s\":\"0\", \"d\":\"EAR75fE1ZmuCSfDwKPfbLowUWLqqi0ZX4502DLIo857Q\"}]}" | jq
 curl -s -X POST "http://localhost:5623/groups/issuer/ixn" -H "accept: */*" -H "Content-Type: application/json" -d "{\"aids\":[\"EJccSRTfXYF6wrUVuenAIHzwcx3hJugeiJsEKmndi5q1\",\"EKYLUMmNPZeEs77Zvclf0bSN5IN-mLfLpx2ySb-HDlk4\"], \"data\":[{\"i\":\"EAXJtG-Ek349v43ztpFdRXozyP7YnALdB0DdCEanlHmg\",\"s\":\"0\", \"d\":\"EAR75fE1ZmuCSfDwKPfbLowUWLqqi0ZX4502DLIo857Q\"}]}" | jq
 
-echo "Script complete"
+echo "Demo complete"
