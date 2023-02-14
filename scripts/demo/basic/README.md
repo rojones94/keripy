@@ -19,7 +19,7 @@ This demo shows how witnesses could be used to add credibility to a series of ev
 
 In the first terminal run:
 ```bash
-$ kli agent demo --config-file demo-witness-oobis
+$  kli witness demo
 ```
 
 In the second terminal run:
@@ -76,7 +76,7 @@ $ kli witness demo
 
 In the second terminal (where the interactions happen) run:
 ```bash
-$ challenge.sh
+$ delegate.sh
 ```
 
 ----------

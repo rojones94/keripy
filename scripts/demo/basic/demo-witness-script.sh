@@ -27,10 +27,10 @@ isSuccess
 
 ## INCEPT AND PROPOGATE EVENTS AND RECEIPTS TO WITNESSES
 echo "INCEPT AND PROPOGATE EVENTS AND RECEIPTS TO WITNESSES"
-kli incept --name witness-test --base "${KERI_TEMP_DIR}" --alias trans-wits --file "${KERI_DEMO_SCRIPT_DIR}/data/trans-wits-sample.json"
+kli incept --name witness-test --base "${KERI_TEMP_DIR}" --alias trans-wits --file "${KERI_DEMO_SCRIPT_DIR}/data/basic/trans-wits-sample.json"
 isSuccess
 
-kli incept --name witness-test --base "${KERI_TEMP_DIR}"  --alias inquisitor --file "${KERI_DEMO_SCRIPT_DIR}/data/inquisitor-sample.json"
+kli incept --name witness-test --base "${KERI_TEMP_DIR}"  --alias inquisitor --file "${KERI_DEMO_SCRIPT_DIR}/data/basic/inquisitor-sample.json"
 isSuccess
 
 kli status --name witness-test --base "${KERI_TEMP_DIR}"  --alias trans-wits

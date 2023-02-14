@@ -32,3 +32,5 @@ sleep 3
 curl -s -X PUT "http://localhost:5623/ids/delegate/rot" -H "accept: */*" -H "Content-Type: application/json" -d "{\"adds\":[],\"count\":1,\"cuts\":[],\"data\":[],\"isith\":\"1\",\"toad\":3,\"wits\":[]}" | jq
 sleep 3
 curl -s -X PUT "http://localhost:5723/ids/delegator/rot" -H "accept: */*" -H "Content-Type: application/json" -d "{\"adds\":[],\"count\":1,\"cuts\":[],\"data\":[{\"i\":\"ENXX5omYUZwM4Dg7WOOHuNmjSeKE2nfNuQbEQBNo4c3c\",\"s\":\"1\", \"d\":\"EKwpwCeuV-78blh1JPa8pdhpeqYN_VhuIzYUPD3SFFBN\"}],\"isith\":\"1\",\"toad\":3,\"wits\":[]}" | jq
+
+echo "Demo Complete"

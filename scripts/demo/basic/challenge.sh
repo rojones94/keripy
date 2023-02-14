@@ -2,10 +2,10 @@
 
 echo "Creating and incepting AIDs"
 kli init --name cha1 --nopasscode --config-dir "${KERI_SCRIPT_DIR}" --config-file demo-witness-oobis
-kli incept --name cha1 --alias cha1 --file ${KERI_DEMO_SCRIPT_DIR}/data/challenge-sample.json
+kli incept --name cha1 --alias cha1 --file ${KERI_DEMO_SCRIPT_DIR}/data/basic/challenge-sample.json
 
 kli init --name cha2 --nopasscode --config-dir "${KERI_SCRIPT_DIR}" --config-file pool2-witness-oobis
-kli incept --name cha2 --alias cha2 --file ${KERI_DEMO_SCRIPT_DIR}/data/challenge-sample-pool2.json
+kli incept --name cha2 --alias cha2 --file ${KERI_DEMO_SCRIPT_DIR}/data/basic/challenge-sample-pool2.json
 
 cha1_oobi="$(kli oobi generate --name cha1 --alias cha1 --role witness | sed -n '2 p')"
 cha2_oobi="$(kli oobi generate --name cha2 --alias cha2 --role witness | sed -n '2 p')"
@@ -24,3 +24,5 @@ kli challenge verify --name cha2 --alias cha2 --signer cha1 --words "${words1}"
 echo "Challenging cha2 with ${words2}"
 kli challenge respond --name cha2 --alias cha2 --recipient cha1 --words "${words2}"
 kli challenge verify --name cha1 --alias cha1 --signer cha2 --words "${words2}"
+
+echo "Demo Complete"
