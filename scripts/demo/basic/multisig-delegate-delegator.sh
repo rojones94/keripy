@@ -66,4 +66,4 @@ wait $PID_LIST
 
 kli status --name delegate2 --alias delegate
 
-echo "Script complete"
+echo "Demo complete"

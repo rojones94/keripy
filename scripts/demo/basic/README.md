@@ -146,9 +146,9 @@ $ multisig-partial-rotation.sh
 ```
 
 ----------
-## Multi signature delegation
+## Multi signature delegation e.g. 1
 
-This demo creates three Identities. A Delegator is asked for delegated authorithy by two Identities that both sign the request. 
+This demo creates three Identities. A Delegator is asked for delegated authority by two Identities that both sign the request. 
 
 In the first run:
 ```bash
@@ -158,6 +158,22 @@ $ kli witness demo
 In the second (where the interactions happen) run:
 ```bash
 $ multisig-delegate.sh
+```
+
+----------
+
+## Multi signature delegation e.g. 2
+
+This demo creates four Identities. Two groups of two are formed. One group acts as the delegate and the other the delegator. (the concept is the same as in the delegate example except instead of each identity acting alone all members of the group need to sign events) 
+
+In the first run:
+```bash
+$ kli witness demo
+```
+
+In the second (where the interactions happen) run:
+```bash
+$ multisig-delegate-delegator.sh
 ```
 
 ----------
