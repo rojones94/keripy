@@ -28,5 +28,3 @@ pid=$!
 PID_LIST+=" $pid"
 
 wait $PID_LIST
-
-
