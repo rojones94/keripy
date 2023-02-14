@@ -199,9 +199,9 @@ $ multisig-agent.sh
 
 ----------
 
-## Multi signature agent
+## Multi signature delegate agent
 
-This demo uses agents to demonstrate a request for delegated authority for multiple signatures from agents on a network.
+This demo uses agents to demonstrate a request for delegated authority for multiple signatures for agents on a network.
 
 In the first run:
 ```bash
@@ -216,6 +216,27 @@ $ kli witness demo
 In the third (where the network interactions happen) run:
 ```bash
 $ multisig-delegate-agent.sh
+```
+
+----------
+
+## Multi signature delegator and delegate agent
+
+This demo uses two signature groups with on group acting as a delegator and the second as a delegate. All as agents on a network.
+
+In the first run:
+```bash
+$ kli agent demo --config-file demo-witness-oobis
+```
+
+In the second run:
+```bash
+$ kli witness demo
+```
+
+In the third (where the network interactions happen) run:
+```bash
+$ multisig-delegate-delegator-agent.sh
 ```
 
 ----------
